@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://xfox/skin/xfox.css" type="text/css"?>
+<!DOCTYPE xfox SYSTEM "chrome://xfox/locale/xfox.dtd">
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <statusbar id="status-bar">
+    <statusbarpanel class="statusbarpanel-menu-iconic"
+				   onclick="if (event.button == 0) toggleSidebar('xfox-sidebar');"
+				   tooltiptext="&name;"
+					 context="xfox-contextmenu"
+     id="xfox-statusbarpanel">
+   </statusbarpanel>
+ </statusbar>
+</overlay>

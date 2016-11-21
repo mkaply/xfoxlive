@@ -1,0 +1,6 @@
+<!ENTITY name "XFox Live">
+<!ENTITY sidebar.name "XFox Live">
+<!ENTITY addFriend.label "Add Friend">
+<!ENTITY preferences.label "Preferences">
+<!ENTITY import.label "Import">
+<!ENTITY friends.label "Friends List (for import)">

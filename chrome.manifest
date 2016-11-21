@@ -1,0 +1,9 @@
+content   xfox                 chrome/content/ contentaccessible=yes
+skin      xfox   classic/1.0   chrome/skin/
+locale    xfox   en-US         chrome/locale/en-US/
+resource  xfox                 modules/
+
+overlay   chrome://browser/content/browser.xul   chrome://xfox/content/xfox.xul
+overlay   chrome://browser/content/browser.xul   chrome://xfox/content/xfoxFF3.xul appversion<=3.6.*
+overlay   chrome://browser/content/browser.xul   chrome://xfox/content/xfoxFF4.xul appversion>3.6.*
+style chrome://global/content/customizeToolbar.xul chrome://xfox/skin/xfox.css

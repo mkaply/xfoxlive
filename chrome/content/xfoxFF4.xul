@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://xfox/skin/xfox.css" type="text/css"?>
+<!DOCTYPE xfox SYSTEM "chrome://xfox/locale/xfox.dtd">
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <toolbarpalette id="BrowserToolbarPalette">
+  <toolbarbutton id="xfox-statusbarpanel" class="toolbarbutton-1 chromeclass-toolbar-additional"
+		label="&name;"
+    tooltiptext="&name;"
+    oncommand="toggleSidebar('xfox-sidebar');"
+		context="xfox-contextmenu">
+  </toolbarbutton>
+  </toolbarpalette>
+</overlay>

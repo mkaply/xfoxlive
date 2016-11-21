@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://xfox/skin/xfox.css" type="text/css"?>
+<!DOCTYPE xfox SYSTEM "chrome://xfox/locale/xfox.dtd">
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript;version=1.7" src="chrome://xfox/content/xfox.js"/>
+  <popupset id="mainPopupSet">
+    <menupopup id="xfox-contextmenu">
+      <menuitem label="&addFriend.label;" id="xfox-addfriend"/>
+      <menuitem label="&import.label;" id="xfox-import"/>
+      <menuitem label="&friends.label;" id="xfox-friendslist" oncommand="openUILinkIn('http://live.xbox.com/friendcenter/', 'tab')"/>
+			<menuseparator/>
+      <menuitem label="&preferences.label;" id="xfox-preferences"/>
+    </menupopup>
+  </popupset>
+  <menupopup id="viewSidebarMenu">
+    <menuitem id="xfox-sidebarmenuitem" label="&sidebar.name;" observes="xfox-sidebar"/>
+  </menupopup>
+  <broadcasterset id="mainBroadcasterSet">
+    <broadcaster id="xfox-sidebar"
+                 autoCheck="false"
+                 type="checkbox"
+                 group="sidebar"
+                 sidebarurl="chrome://xfox/content/xfoxPanel.xul"
+                 sidebartitle="&sidebar.name;"
+                 oncommand="toggleSidebar('xfox-sidebar');"/>
+  </broadcasterset>
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="xfox_bundle" 
+        src="chrome://xfox/locale/xfox.properties"/>
+  </stringbundleset>
+</overlay>

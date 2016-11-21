@@ -1,0 +1,6 @@
+.DS_Store
+*.kpf
+*.komodoproject
+buildit.sh
+excludefile.txt
+idls

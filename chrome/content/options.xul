@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE dialog PUBLIC "-//MOZILLA//DTD XUL V1.0//EN" "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<?xml-stylesheet href="chrome://mozapps/content/preferences/preferences.css"?>
+<?xml-stylesheet href="chrome://browser/content/preferences/handlers.css"?>
+<?xml-stylesheet href="chrome://browser/skin/preferences/applications.css"?>
+
+<prefwindow id="xfox-options"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        persist="screenX screenY width height"
+				height="150px"
+				width="350px">
+	<prefpane>
+    <preferences id="xfoxPreferences">
+
+      <preference id="extensions.xfox.updateInterval"
+                  name="extensions.xfox.updateInterval"
+                  type="int"/>
+      <preference id="extensions.xfox.MyGamerCard"
+                  name="extensions.xfox.MyGamerCard"
+                  type="bool"/>
+	</preferences>
+
+	<hbox align="center"><label>Check for updates every</label><textbox type="number" size="3" value="15" preference="extensions.xfox.updateInterval"/><label>minutes</label></hbox>
+  <checkbox preference="extensions.xfox.MyGamerCard" label="Link gamer cards to MyGamerCard.net"/>
+	</prefpane>
+</prefwindow>

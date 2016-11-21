@@ -1,0 +1,7 @@
+#xfox-statusbarpanel {
+   list-style-image: url("chrome://xfox/skin/xfox-small-update.png");
+}
+
+#xfox-statusbarpanel[updates="true"] {
+   list-style-image: url("chrome://xfox/skin/xfox-small-update.png");
+}
